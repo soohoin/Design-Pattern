@@ -17,6 +17,7 @@
 
 - 해군을 추가해보자!!
   - 해군 - 공격:지상  이동:배(Ship)로이동
+
 - Class Diagram
 
 ![Strategy02](https://user-images.githubusercontent.com/31425312/59023090-fee79e00-8889-11e9-98c6-22790021ba2e.PNG)
@@ -32,3 +33,35 @@
   어쨋든 이런 현상들을 막고자 등장한 것이 드디어 드이더 ~~ Strategy Pattern 이다 우리가 자꾸 바꾸고 새롭게 생성하는 두가지의 알고리즘을 다른 클레스로
   빼고 켑슐화해서 클라이언트에서 던져주는 것이다  그럼 Army, AirForce, Navy 모두 공격과 이동이 새롭게 추가되더라도 기존의 코드를 전혀 고치지 않고
   새로운 알고리즘을 적용할 수 있을 것이다.
+
+## 전략패턴(Strategy Pattern) 으로 변경해보기
+- 변경되는 부분이 무엇인지 확인한다. => attact(), move()
+- 그럼 move()와 attact() 을 가지고 있는 인터페이스를 만든다. => MoveStrategy , AttactStrategy  
+- 그리고 각기 어떤 알고리즘이 필요한지 정리해보자
+- move()
+  1. 비행기로이동
+  2. 걸어서이동
+  3. 배로이동  
+- attact()
+  1. 하늘공격
+  2. 지상공격
+
+- 이렇게 정리를 했다면 이제 MoveStrategy와 AttactStrategy 인터페이스를 각각 알고리즘에 맞게 implements 해서 알고리즘을 정의한다.   
+- Millitary 클레스에서 각기 켑슐화한  MoveStrategy와 AttactStrategy 를 맴버로 가지고 있고 외부에서 set 할수 있도록 method 를 만들어준다.
+- 이제 Client 에서는 각기 넣고싶은 전략을 넣어서 set 한후 호출을 한다.
+
+- 만약에 공격중에 지하공격이 생겼다고 가정해 보자  그럼 이제는 기존에 만들어놓은 Millitary와 각 군인 클레스들을 건들지 않고도 전략적으로 알고리즘을 상황에 맞게
+  넣어줄수 있다.
+
+
+- Class Diagram
+
+![Strategy03](https://user-images.githubusercontent.com/31425312/59030824-095f6300-889d-11e9-97da-db6d31c30e06.PNG)
+
+
+- 이제나는 무한한 알고리즘을 생산해서 나의 군인들에게 상황에 맞게 넣어줄수 있게 됐다.
+  만약 군인이 1만명있고 각기 상황에 맞는 알고리즘을 바꿔야 하는 상황이 온다면 우리는 이제
+  그때마다 attact과 move에 대해서 군인들의 클레스는 전혀 건들이 않고 바꿔줄수 있따는 장점과
+  코드를 재사용 하는데 큰 의미가 있는 것 같다.
+
+  ## Strategy Pattern End~ 
