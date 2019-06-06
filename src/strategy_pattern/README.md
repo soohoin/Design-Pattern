@@ -6,11 +6,15 @@
 ## 예시 (Strategy Pattern 적용 전)
 
 - 군인을 만들어서 이름을 갖게하고 공격/이동 기능을 넣는다.
-- 군인은 여러 좋유의 군인이 있기에 Abstract 클레스(Millitary.java)로 정의한 후 여러 군인을 만들때 이를 상속 받아서 구현한다.
+- 군인은 여러 좋류의 군인이 있기에 Abstract 클레스(Millitary.java)로 정의한 후 여러 군인을 만들 때 이를 상속 받아서 구현한다.
 - 우선 육군과 공군을 만들었다.
   - 육군 - 공격:지상  이동:걸어서이동    
   - 공군 - 공격:하늘  이동:비행기로이동    
 
 - Class Diagram
-
 ![Ex_Strategy01](https://user-images.githubusercontent.com/31425312/59021442-c4c8cd00-8886-11e9-811b-e2395937ac67.PNG)
+
+- 해군을 추가해보자!!
+  - 해군 - 공격:지상  이동:배(Ship)로이동
+- Class Diagram
+![Strategy02](https://user-images.githubusercontent.com/31425312/59023090-fee79e00-8889-11e9-98c6-22790021ba2e.PNG)

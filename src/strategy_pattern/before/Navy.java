@@ -1,9 +1,10 @@
 package strategy_pattern.before;
 
-public class Army  extends Military{
+public class Navy extends Military{
 
-	public Army(String name) {
+	public Navy(String name) {
 		super(name);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -13,7 +14,8 @@ public class Army  extends Military{
 
 	@Override
 	void move() {
-		System.out.println("지상으로이동");
+		System.out.println("배로이동");
 	}
 
+	
 }

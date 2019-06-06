@@ -1,6 +1,6 @@
 package strategy_pattern.before;
 
-public class AirForce extends Millitary{
+public class AirForce extends Military{
 
 	public AirForce(String name) {
 		super(name);

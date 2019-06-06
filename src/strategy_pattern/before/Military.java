@@ -1,10 +1,10 @@
 package strategy_pattern.before;
 
-public abstract class Millitary {
+public abstract class Military {
 	
 	private String name;						//  군인이름
 	
-	public Millitary(String name) {
+	public Military(String name) {
 		this.name = name;
 	}
 	
