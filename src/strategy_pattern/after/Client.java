@@ -15,9 +15,6 @@ public class Client {
 		navy.setMove(new MoveShip());
 		
 		
-		
-		
-		
 		System.out.println("나는 육군 " + army.getName()+ " 이다.");
 		System.out.print("attact() : ");
 		army.attact();
