@@ -4,7 +4,6 @@ public class Navy extends Military{
 
 	public Navy(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

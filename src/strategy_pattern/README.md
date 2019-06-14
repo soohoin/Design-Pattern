@@ -1,4 +1,4 @@
-## Strategy pattern
+## Strategy Pattern
 
 - 전략 패턴(strategy pattern) 또는 정책 패턴(policy pattern)은 실행 중에 알고리즘을 선택할 수 있게 하는 행위 디자인 패턴이다.
 - 프로그램을 확장 했을 때 변경될 알고리즘이 있다면 이 알고리즘을 클래스별로 캡슐화하고 필요할 때 교체할 수 있도록 한다.

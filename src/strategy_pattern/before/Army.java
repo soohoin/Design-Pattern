@@ -13,7 +13,7 @@ public class Army  extends Military{
 
 	@Override
 	void move() {
-		System.out.println("지상으로이동");
+		System.out.println("걸어서 이동");
 	}
 
 }
