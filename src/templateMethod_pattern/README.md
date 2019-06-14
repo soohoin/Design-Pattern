@@ -24,3 +24,7 @@
 - 육군/해군/공군 을 만들고 각자 공격, 이동, 아이템 이 세가지를 가지고 있으면서 자기를 소개하는 클레스를 만들어보자.
 - class Diagram
 ![t1](https://user-images.githubusercontent.com/31425312/59482929-f0127400-8ea5-11e9-8d91-3acb27d7c2e2.PNG)
+
+- Army Class
+![01](https://user-images.githubusercontent.com/31425312/59512271-5e315800-8ef3-11e9-9e07-cce7d47b5aa2.PNG)
+- 세가지 군인중 Army클레스의 소스를보면 한가지의 일을하는 4개의 메소드와 이 4개의 메소드를 순차적으로 호출하는 메소드가 하나있다. 그리고 나머지 군인 클레스도 동일하게 만들어 질 것이다. 
