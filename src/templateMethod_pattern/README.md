@@ -54,7 +54,7 @@
 
 ![templateMethod01](https://user-images.githubusercontent.com/31425312/59550332-5bdb0680-8fa4-11e9-88cb-37d1a94aaaca.PNG)
 
-- Millitary Class
+- Military Class
 
 ![templateMethod10](https://user-images.githubusercontent.com/31425312/59551574-a9606f00-8fb6-11e9-8e2c-da80cad9719e.PNG)
 
