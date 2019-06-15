@@ -39,3 +39,19 @@
 - class Diagram
 
 ![templateMethod01](https://user-images.githubusercontent.com/31425312/59550332-5bdb0680-8fa4-11e9-88cb-37d1a94aaaca.PNG)
+
+- Millitary Class
+
+![templateMethod02](https://user-images.githubusercontent.com/31425312/59550367-dc9a0280-8fa4-11e9-8565-b6de83905073.PNG)
+
+- Army Class
+
+![templateMethod03](https://user-images.githubusercontent.com/31425312/59550386-0f43fb00-8fa5-11e9-9802-609ee00083e3.PNG)
+
+- AirForce Class
+
+![templateMethod05](https://user-images.githubusercontent.com/31425312/59550396-431f2080-8fa5-11e9-9cf5-e438eb15ff44.PNG)
+
+- Navy Class
+
+![templateMethod06](https://user-images.githubusercontent.com/31425312/59550398-44e8e400-8fa5-11e9-9b1b-b3f25e60270c.PNG)
