@@ -56,7 +56,7 @@
 
 - Millitary Class
 
-![templateMethod09](https://user-images.githubusercontent.com/31425312/59550741-5502c280-8fa9-11e9-80e7-35d51c1e7651.PNG)
+![templateMethod10](https://user-images.githubusercontent.com/31425312/59551574-a9606f00-8fb6-11e9-8e2c-da80cad9719e.PNG)
 
 - Army Class
 

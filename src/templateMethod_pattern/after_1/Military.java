@@ -25,7 +25,7 @@ public abstract class Military {
 		return name;		
 	}
 	
-	// 추상클레스 
+	// 추상메서드 
 	abstract void kind();
 	abstract void attact();
 	abstract void move();
