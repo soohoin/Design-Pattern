@@ -7,8 +7,8 @@ public class Client {
 		Navy navy = new Navy("°í°æ½Ä");
 		
 		army.intro();
-		airForoce.intro();
-		navy.intro();
+		//airForoce.intro();
+		//navy.intro();
 		
 	}
 }

@@ -5,7 +5,7 @@ public abstract class Military {
 	private String name;						//  군인이름
 	
 	// 케릭터별 자기소개 - 템플릿 메서드
-	public void intro() {
+	protected void intro() {
 		kind();
 		System.out.println("Name : "+ name);
 		System.out.print("Attact : ");

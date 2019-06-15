@@ -44,14 +44,19 @@
 
 ## 예시(Template Method Pattern 적용)
 1. 중복되는 코드와 소개하는 매소드를 부모 클레스로 뺀다.
-2. 재정의가 필요한 항목은 추상메소드로 두고 바뀌지 말아야 할 프로세스는 재정의 하지 못하도록 private으로 숨긴다.
+2. 재정의가 필요한 항목은 추상메소드로 두고 항상 똑같은 순서대로 진행되는 intro() 는 접근 제어자를 protected 로 둬서 상속받은 클레스는 접근 가능하게 해준다.
+여기서 우리가 생각해 볼게 있다 만약에 저 intro()를 외부에 노출 시키지 않아도 되고 재정의 되는걸 원치 않는다면 private 으로 감춰서 내부 적으로만 수행하게 하면된다.
+여기서 조심해야 될 사항은 private으로 감춰 버리면 Millitary 클레스 타입이 아니면 저 intro()를 호출하고 사용할 수 없다는 점이다 그래서 상황에 맞데 정해주면 될 것 같다.
+그리고 hook method 가 보인다 이 부분은 추상(부모) 클레스 에서 미리 구현을 기본으로 해놓고 자식 클레스 에서 정의하지 않으면 기본적으로 나오게끔 만들어 놨다.
+또한 재정의를 원한다면 Override 해서 사용하면 될 것이다.
+(정리를 했는데 뭔가가... 찝찝한 이느낌...?? 예제를 잘못 선택했나? ㅠ.ㅠ ㅎㅎㅎ)
 - class Diagram
 
 ![templateMethod01](https://user-images.githubusercontent.com/31425312/59550332-5bdb0680-8fa4-11e9-88cb-37d1a94aaaca.PNG)
 
 - Millitary Class
 
-![templateMethod02](https://user-images.githubusercontent.com/31425312/59550367-dc9a0280-8fa4-11e9-8565-b6de83905073.PNG)
+![templateMethod09](https://user-images.githubusercontent.com/31425312/59550741-5502c280-8fa9-11e9-80e7-35d51c1e7651.PNG)
 
 - Army Class
 
@@ -64,3 +69,11 @@
 - Navy Class
 
 ![templateMethod06](https://user-images.githubusercontent.com/31425312/59550398-44e8e400-8fa5-11e9-9b1b-b3f25e60270c.PNG)
+
+
+- 이렇게 공통적인 intro() 를 힘들게 군인 클레스 에서 신경쓸 필요 없이 기능들에 집중해서 만들어주면 된다.
+
+## 문제점 발견?
+- 잘 생각해보면 각 군인들이 템플릿 매서드 패턴으로 Millitary Class 상속 받아서 기능들을 구현했다 ... 그런데 저번시간에 정리한 Strategy Pattern이 생각나는건 나뿐인 건가?? ㅎㅎ 각 군인들의 클레스가 변경될 수 있는 여지가 있고 바뀔 수 있는 기능들은 모두 인터페이스로 만들어서 각 군인들의 기능들이 바뀌더라도 최대한 변경되지 않도록 하는 내용 이였다 ... 그럼 다음시간에는 템플릿 메소드 패턴!! 에다가 Strategy Pattern 을 적용해서 만들어 보도록 하겠다!!
+
+##두서없는 글 읽느라 너무너무 고생 많으셨어요!! ㅂㅂ
