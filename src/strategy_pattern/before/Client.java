@@ -2,6 +2,8 @@ package strategy_pattern.before;
 
 public class Client {
 	public static void main(String[] args) {
+		
+//		ddddddddd
 		Military army = new Army("È«±æµ¿");
 		Military airForoce = new AirForce("±èµ¿¼ö");
 		Military navy = new Navy("°í°æ½Ä");
